@@ -2,10 +2,42 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Using google Maps</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Using Google Maps</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Using Google maps</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>faecc4644bcd7421b04542dc9e4d4623fb432860</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>cY5cc2hZcFLc3US9DpG3q3Tfp</string>
+					<key>consumerSecret</key>
+					<string>QKy4mzthPdAGE0eNY7DAYioqw0TDkEARXb3y8RmULx5cMX7ZiK</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+		</array>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Near</string>
+	<string>NearbyTweets</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

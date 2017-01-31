@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import <Fabric/Fabric.h>
+#import <TwitterKit/TwitterKit.h>
+@import GoogleMaps;
+@import GooglePlaces;
+
 
 @interface AppDelegate ()
 
@@ -16,10 +21,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+        [Fabric with:@[[Twitter class]]];
+    [GMSServices provideAPIKey:@"AIzaSyCn47NWU2rYXMc_LOUGYmOt5rF8k71fAc8"];
+    [GMSPlacesClient provideAPIKey:@"AIzaSyCn47NWU2rYXMc_LOUGYmOt5rF8k71fAc8"];
     // Override point for customization after application launch.
     return YES;
 }
-
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    if ([[Twitter sharedInstance] application:app openURL:url options:options]) {
+        return YES;
+    }
+    
+    // If you handle other (non Twitter Kit) URLs elsewhere in your app, return YES. Otherwise
+    return NO;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
