@@ -617,6 +617,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9KJ4J2KBAT;
 				INFOPLIST_FILE = nearbytweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vinay-Krishna-Gupta.nearbytweets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -630,6 +631,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9KJ4J2KBAT;
 				INFOPLIST_FILE = nearbytweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Vinay-Krishna-Gupta.nearbytweets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
